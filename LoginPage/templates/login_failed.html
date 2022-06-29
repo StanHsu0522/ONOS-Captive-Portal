@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>userPOST</title>
+    <script src="{{ url_for('static', filename='jquery-latest.js') }}"></script>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <script language="javascript">
+        $(function () {
+            $('#submit').mouseover(function () {
+                $(this).css({ 'background': '#00AAAA', 'font-size': '22px' })
+            });
+            $('#submit').mouseout(function () {
+                $(this).css({ 'background': '#00AAAA', 'font-size': '20px' })
+            });
+        });
+    </script>
+    <div id="login_failed_block">
+        <h1>Login Failed</h1>
+        <form id="user_login_failed" method="POST">
+            <table id="failed_redirect">
+                <tr height="80">
+                    <td><input type='submit' id="submit" name='submit' value='Retry' /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+h1{
+    font-size: 50px;
+}
+#login_block{
+	margin: 10px 150px;
+	font-family: arial
+}
+#login_table tr td {
+    padding: 10px;
+}
+#user_login{
+    margin: 30px;
+}
+#submit{
+	background: #00AAAA;
+	border: 0px;
+	padding: 10px 10px;
+	width: 80px;
+    height: 45px;
+	font-size: 20px;
+    color: white;
+    margin: 50px, 0px, 30px, 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;cursor: pointer;
+}
+label{
+	display: block;
+    font-size: 30px;
+}
+input{
+    padding: 0px, 10px;
+    border-width: 1px;
+    border-style: none none solid none;
+    border-color: black;
+    width: 300px;
+    height: 45px;
+}
+#error_msg{
+	display: block;
+	font-size: 20px;
+	line-height: 26px;
+    text-align: center;
+}
+#loading_div,
+#login_success{
+	display: block;
+	font-size: 20px;
+	line-height: 26px;
+    text-align: center;
+}

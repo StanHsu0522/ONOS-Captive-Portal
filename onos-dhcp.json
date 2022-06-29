@@ -1,0 +1,22 @@
+{
+    "apps":{
+        "org.onosproject.dhcp":{
+            "dhcp":{
+                "ip":"192.168.44.201",
+                "mac":"ca:fe:ca:fe:ca:fe",
+                "subnet":"255.255.255.0",
+                "broadcast":"192.168.44.255",
+                "domain":"8.8.8.8",
+				"router":"192.168.44.101",
+                "ttl":"63",
+                "lease":"60",
+                "renew":"20",
+                "rebind":"30",
+                "delay":"2",
+                "timeout":"220",
+                "startip":"192.168.44.165",
+                "endip":"192.168.44.180"
+            }
+        }
+    }
+}

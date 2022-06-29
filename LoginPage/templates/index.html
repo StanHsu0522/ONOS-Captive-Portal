@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>UserLogin</title>
+    <script src="{{ url_for('static', filename='jquery-latest.js') }}"></script>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <script language="javascript">
+        $(function () {
+            $('#submit').mouseover(function () {
+                $(this).css({ 'background': '#00AAAA', 'font-size': '22px' })
+            });
+            $('#submit').mouseout(function () {
+                $(this).css({ 'background': '#00AAAA', 'font-size': '20px' })
+            });
+        });
+    </script>
+    <div id="login_block">
+        <h1>Login</h1>
+
+        <form id="user_login" method="POST">
+            <table id="login_table">
+                <tr>
+                    <td><label>Account:</label></td>
+                    <td><input type='text' id="user_name" name="user_name" /></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type='password' id="user_password" name="user_password" /></td>
+                </tr>
+                <tr height="80">
+                    <td><input type='submit' id="submit" name='submit' value='Login' /></td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="error_msg" style="display:none;"></div>
+
+        <div id="loading_div" style="display:none">
+            <img src="{{ url_for('static', filename='loading.gif') }}">
+        </div>
+
+        <div id="login_success" style="display:none;"></div>
+    </div>
+</body>
+
+</html>
